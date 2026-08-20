@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Услуги геодезиста</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Manrope',sans-serif;
+    color:#fff;
+    background:#000;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    background:
+      linear-gradient(90deg, rgba(6,12,20,.88), rgba(6,12,20,.55)),
+      url("background.jpeg") center/cover no-repeat;
+    padding:40px 20px;
+}
+
+.container{
+    width:100%;
+    max-width:1200px;
+    margin:auto;
+}
+
+.tag{
+    display:inline-block;
+    color:#FFD54A;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    margin-bottom:18px;
+    font-size:14px;
+}
+
+h1{
+    font-size:clamp(42px,8vw,82px);
+    line-height:.95;
+    font-weight:800;
+    margin-bottom:18px;
+}
+
+h1 span{
+    color:#FFD54A;
+}
+
+.subtitle{
+    max-width:650px;
+    color:#D5DBE3;
+    font-size:clamp(17px,2vw,22px);
+    line-height:1.6;
+    margin-bottom:28px;
+}
+
+.services{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-bottom:34px;
+}
+
+.services span{
+    padding:12px 18px;
+    border-radius:999px;
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.15);
+    backdrop-filter:blur(8px);
+    font-size:15px;
+}
+
+.contacts{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+    gap:14px;
+    margin-bottom:30px;
+}
+
+.card{
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(12px);
+    border:1px solid rgba(255,255,255,.12);
+    border-radius:18px;
+    padding:18px;
+}
+
+.card small{
+    display:block;
+    color:#AAB4C2;
+    margin-bottom:6px;
+}
+
+.card a,
+.card div{
+    color:#fff;
+    text-decoration:none;
+    font-weight:700;
+    font-size:18px;
+}
+
+.buttons{
+    display:flex;
+    flex-wrap:wrap;
+    gap:14px;
+}
+
+.btn{
+    padding:16px 28px;
+    border-radius:14px;
+    text-decoration:none;
+    font-weight:700;
+    transition:.3s;
+}
+
+.primary{
+    background:#FFD54A;
+    color:#111;
+}
+
+.secondary{
+    background:rgba(255,255,255,.08);
+    color:#fff;
+    border:1px solid rgba(255,255,255,.15);
+    backdrop-filter:blur(8px);
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+.footer{
+    margin-top:32px;
+    color:#C5CBD4;
+    font-size:14px;
+}
+
+/* Планшет */
+
+@media (max-width:768px){
+
+.hero{
+    padding:70px 22px;
+}
+
+.contacts{
+    grid-template-columns:1fr 1fr;
+}
+
+.buttons{
+    flex-direction:column;
+}
+
+.btn{
+    text-align:center;
+}
+
+}
+
+/* Телефон */
+
+@media (max-width:520px){
+
+.hero{
+    align-items:flex-start;
+    padding-top:90px;
+}
+
+.contacts{
+    grid-template-columns:1fr;
+}
+
+.services{
+    gap:8px;
+}
+
+.services span{
+    font-size:14px;
+    padding:10px 14px;
+}
+
+.footer{
+    font-size:13px;
+}
+
+}
+</style>
+</head>
+<body>
+
+<section class="hero">
+
+<div class="container">
+
+<div class="tag">ГЕОДЕЗИЧЕСКИЕ РАБОТЫ</div>
+
+<h1>Услуги <span>геодезиста</span></h1>
+
+<p class="subtitle">
+Топографическая съёмка, межевание, вынос границ участка и исполнительная съёмка.
+Работаю быстро, точно и с выездом по городу и области.
+</p>
+
+<div class="services">
+<span>Топосъёмка</span>
+<span>Межевание</span>
+<span>Вынос границ</span>
+<span>Исполнительная съёмка</span>
+</div>
+
+<div class="contacts">
+
+<div class="card">
+<small>Телефон</small>
+<a href="tel:+79991234567">+7 (999) 123-45-67</a>
+</div>
+
+<div class="card">
+<small>WhatsApp</small>
+<a href="https://wa.me/79991234567">Написать</a>
+</div>
+
+<div class="card">
+<small>Telegram</small>
+<a href="https://t.me/geodezist">t.me/geodezist</a>
+</div>
+
+<div class="card">
+<small>Работаю</small>
+<div>Ваш город и область</div>
+</div>
+
+</div>
+
+<div class="buttons">
+<a class="btn primary" href="tel:+79991234567">Позвонить</a>
+<a class="btn secondary" href="https://wa.me/79991234567">WhatsApp</a>
+<a class="btn secondary" href="https://t.me/geodezist">Telegram</a>
+</div>
+
+<div class="footer">
+Современное оборудование • Быстрый выезд • Работа без лишней бюрократии
+</div>
+
+</div>
+
+</section>
+
+</body>
+</html>
